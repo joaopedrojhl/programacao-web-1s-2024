@@ -4,7 +4,7 @@ function verificarNumeroPrimo(n) {
     }
 
     for (let i = 2; i < n; i++) {
-        if (n % i === 0) {
+        if (n % i == 0) {
             return false; 
         }
     }
@@ -14,8 +14,8 @@ function verificarNumeroPrimo(n) {
 console.log(verificarNumeroPrimo(0)); 
 console.log(verificarNumeroPrimo(1)); 
 console.log(verificarNumeroPrimo(2)); 
-console.log(verificarNumeroPrimo(3))
-console.log(verificarNumeroPrimo(7)); 
+console.log(verificarNumeroPrimo(3));
+console.log(verificarNumeroPrimo(7));
 console.log(verificarNumeroPrimo(83)); 
 console.log(verificarNumeroPrimo(100));  
 console.log(verificarNumeroPrimo(991));
