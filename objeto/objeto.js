@@ -1,5 +1,5 @@
 let calculadora = { // objeto
-    numneroA: 0, // propriedade
+    numeroA: 0, // propriedade
     numeroB: 0,
     somar: function (){
         return this.numneroA + this.numeroB;
