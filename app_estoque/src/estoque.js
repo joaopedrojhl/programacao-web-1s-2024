@@ -19,13 +19,22 @@ function listaProdutos() {
 
 function removerProduto(id) {
     produtos = produtos.filter((p) => {
-        return p.id != id
+        return p.id != id;
     }); 
+}
+
+function editarProduto(id, qtd){
+    produtos.filter((p) => {
+        if(id == p.id){
+            p.qtd = qtd;
+        }
+    })
 }
 
 module.exports = {
     criarProduto,
     adicionarProduto,
     listaProdutos,
-    removerProduto
+    removerProduto,
+    editarProduto
 };

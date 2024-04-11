@@ -21,6 +21,13 @@ app.get('/remover/:id', function (req, res) {
     res.send(id);
 })
 
+app.get('/editar/:id/:qtd', function (req, res) {
+    let id = req.params.id;
+    let qtd = req.params.qtd;
+    estoque.editarProduto(id, qtd);
+    res.send(qtd);
+})
+
 const PORT = 8080;
 app.listen(PORT, function (){
     console.log('app rodando na porta ' + PORT);
