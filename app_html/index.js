@@ -4,9 +4,14 @@ const app             = express();
 
 app.engine('html', mustacheExpress());
 app.set('view engine', 'html');
+app.set('views', __dirname + '/views')
 
 app.get('/', function(req, res){
-    res.render('index.html');
+    let nome = req.params.nome;
+    res.render('index.html', {nome});
+});
+app.get('/contato', function(req, res){
+    res.render('contato.html');
 });
 
 const PORT = 8080;
