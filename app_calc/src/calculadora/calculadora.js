@@ -21,25 +21,22 @@ function calcular(v1, v2, op) {
     return resultado;
 }
 function nomeOperador(op) {
+    let nmOperador;
     switch (op) {
-
         case '+':
-            resultado = "soma";
+            nmOperador = "soma";
             break;
-
         case '-':
-            resultado = "subtração";
+            nmOperador = "subtração";
             break;
-
         case '*':
-            resultado = "multiplição";
+            nmOperador = "multiplicação";
             break;
         case '/':
-            resultado = "divisão";
+            nmOperador = "divisão";
             break;
     }
-    return resultado;
-    
+    return nmOperador;
 }
 module.exports = {
     calcular
