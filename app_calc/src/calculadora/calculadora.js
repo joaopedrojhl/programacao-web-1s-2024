@@ -1,5 +1,3 @@
-const { resultado } = require("../controller/calculadoraController");
-
 function calcular(v1, v2, op) {
     switch (op) {
 
@@ -39,5 +37,6 @@ function nomeOperador(op) {
     return nmOperador;
 }
 module.exports = {
-    calcular
+    calcular,
+    nomeOperador
 }
