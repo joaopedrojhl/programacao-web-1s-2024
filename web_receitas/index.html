@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Receitas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+.banner, .new-recipes {
+    margin-bottom: 2rem;
+}
+
+.recipes-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-card h3 {
+    margin: 0.5rem 0;
+}
+
+.recipe-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.recipe-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.25rem;
+}
+
+.recipe-card a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 1rem;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delícias da Cozinha</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categorias</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h2>Receitas Populares</h2>
+            <div class="recipes-container">
+                <div class="recipe-card">
+                    <img src="images/bolo_chocolate.webp" alt="Bolo de Chocolate">
+                    <h3>Bolo de Chocolate</h3>
+                    <p>Um delicioso bolo de chocolate feito com ingredientes simples.</p>
+                    <a href="recipe_bolo_de_chocolate.html">Ver Receita</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/lasanha.jpg" alt="Lasanha à Bolonhesa">
+                    <h3>Lasanha à Bolonhesa</h3>
+                    <p>Clássica lasanha italiana com molho bolonhesa.</p>
+                    <a href="recipe_lasanha.html">Ver Receita</a>
+                </div>
+            </div>
+        </section>
+        <section class="new-recipes">
+            <h2>Novas Receitas</h2>
+            <div class="recipes-container">
+                <div class="recipe-card">
+                    <img src="images/salada_grega.jpg" alt="Salada Grega">
+                    <h3>Salada Grega</h3>
+                    <p>Salada fresca com pepino, tomate, azeitonas e queijo feta.</p>
+                    <a href="recipe_salada_grega.html">Ver Receita</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/sopa_de_legumes.jpg" alt="Sopa de Legumes">
+                    <h3>Sopa de Legumes</h3>
+                    <p>Sopa nutritiva com uma variedade de legumes.</p>
+                    <a href="recipe_sopa_de_legumes.html">Ver Receita</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Delícias da Cozinha</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

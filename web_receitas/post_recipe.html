@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postar Receita - Delícias da Cozinha</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 1rem;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    main {
+        padding: 2rem;
+    }
+    
+    .post-recipe-section {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+        border: 1px solid #ddd;
+        border-radius: 0.5rem;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .post-recipe-section h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .post-recipe-form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .post-recipe-form label {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+    
+    .post-recipe-form input[type="text"],
+    .post-recipe-form input[type="file"],
+    .post-recipe-form textarea {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+        width: 100%;
+    }
+    
+    .post-recipe-form button {
+        padding: 0.5rem;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+    
+    .post-recipe-form button:hover {
+        background-color: #555;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer ul li {
+        margin: 0 1rem;
+    }
+    
+    footer ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delícias da Cozinha</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categorias</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="post-recipe-section">
+            <h2>Postar Nova Receita</h2>
+            <form action="post_recipe_handler.php" method="POST" enctype="multipart/form-data" class="post-recipe-form">
+                <label for="title">Título da Receita</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="image">Imagem da Receita</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+
+                <label for="ingredients">Ingredientes</label>
+                <textarea id="ingredients" name="ingredients" rows="5" required></textarea>
+
+                <label for="instructions">Modo de Preparo</label>
+                <textarea id="instructions" name="instructions" rows="10" required></textarea>
+
+                <button type="submit">Postar Receita</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Delícias da Cozinha</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
