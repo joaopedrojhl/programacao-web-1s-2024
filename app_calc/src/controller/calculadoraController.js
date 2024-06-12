@@ -17,7 +17,7 @@ function resultado(req, res) {
             res.redirect('/?erro_valor=true')
         } else {
             v3 = calc.calcular(v1,v2,op);
-            res.render('resultado.html', { v1, v2, nomeOperador, v3 })
+            res.render('resultado.html', { v1, v2, nmOperador, v3 })
         }
     
     })

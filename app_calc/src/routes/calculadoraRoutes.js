@@ -4,6 +4,6 @@ const calcController = require('../controller/calculadoraController');
 
 router.get('/', calcController.index);
 
-router.post('/', calcController.resultado);
+router.post('/resultado', calcController.resultado);
 
 module.exports = router;
